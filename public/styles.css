@@ -1,0 +1,17 @@
+.chubsy-wrapper {
+  height: 100%;
+}
+.chubsy-wrapper .chubsy-wrapper-nav {
+  position: absolute;
+}
+
+body,
+html,
+#root,
+.home-wrapper {
+  height: 100%;
+}
+.home-wrapper {
+  background-image: url(public41c8874c9953ecfc05ff2363114617ec.jpg);
+}
+

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import ReactDOM from "react-dom";
 // import Navigation from '../Navigation/Navigation';
 // import Messages from '../Messages/Messages';
-import './Home.less';
+import './home.less';
 
 
 class Home extends Component {

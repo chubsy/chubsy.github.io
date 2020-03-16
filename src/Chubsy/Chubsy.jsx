@@ -5,9 +5,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import './Chubsy.less';
+import './styles/chubsy.less';
 
-import Home from '../Home/Home';
+import Home from '../home/home';
 
 class Chubsy extends Component {
   constructor(props) {

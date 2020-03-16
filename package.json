@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "Chubsy",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://github.com/chubsy/chubsy",
@@ -18,6 +18,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "debug": "webpack --display-error-details",
+    "dev": "webpack --mode=development",
+    "prod": "webpack --mode=production",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
@@ -48,18 +51,24 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^5.1.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "path": "^0.12.7",
     "style-loader": "^1.1.3",
-    "webpack": "^4.41.5"
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.11"
   }
 }
