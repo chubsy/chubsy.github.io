@@ -3,15 +3,13 @@ const path = require( 'path' );
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ghpages = require('gh-pages');
 
+ghpages.publish('dist', function(err) {});
 
 const dist = path.join(__dirname, "dist");
 
 module.exports = {
-  webpack: override(
-    // usual webpack plugin
-    disableEsLint()
-  ),
   resolve: {
     extensions: ['.js', '.jsx', '.less']
   },

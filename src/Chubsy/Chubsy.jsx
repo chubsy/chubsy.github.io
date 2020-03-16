@@ -23,7 +23,7 @@ class Chubsy extends Component {
           <nav className="chubsy-wrapper-nav">
             <ul>
               <li>
-                <Link to="/">Hello Chloe</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
