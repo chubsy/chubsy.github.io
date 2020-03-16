@@ -2,10 +2,16 @@ const webpack = require('webpack');
 const path = require( 'path' );
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const dist = path.join(__dirname, "public/js");
+
+const dist = path.join(__dirname, "dist");
 
 module.exports = {
+  webpack: override(
+    // usual webpack plugin
+    disableEsLint()
+  ),
   resolve: {
     extensions: ['.js', '.jsx', '.less']
   },
@@ -13,7 +19,7 @@ module.exports = {
   output: {
     path: dist,
     filename: '[name].js',
-    publicPath: 'public/js',
+    publicPath: 'dist',
   },
   module: {
     rules: [
@@ -62,5 +68,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles.css',
     }),
+    new CopyWebpackPlugin([{from: './public/main.js'}])
   ]
 }

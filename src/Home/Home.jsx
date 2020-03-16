@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-// import ReactDOM from "react-dom";
-// import Navigation from '../Navigation/Navigation';
-// import Messages from '../Messages/Messages';
-import './home.less';
+import './styles/home.less';
 
 
 class Home extends Component {
