@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/chubsy/static/css/main.8c981234.chunk.css",
+    "main.js": "/chubsy/main.js",
+    "main.js.map": "/chubsy/static/js/main.bdfc56a8.chunk.js.map",
+    "runtime-main.js": "/chubsy/static/js/runtime-main.020fea2b.js",
+    "runtime-main.js.map": "/chubsy/static/js/runtime-main.020fea2b.js.map",
+    "static/js/2.297dac6c.chunk.js": "/chubsy/static/js/2.297dac6c.chunk.js",
+    "static/js/2.297dac6c.chunk.js.map": "/chubsy/static/js/2.297dac6c.chunk.js.map",
+    "index.html": "/chubsy/index.html",
+    "precache-manifest.084b550fa83533bbf51151668f6dfbe0.js": "/chubsy/precache-manifest.084b550fa83533bbf51151668f6dfbe0.js",
+    "service-worker.js": "/chubsy/service-worker.js",
+    "static/css/main.8c981234.chunk.css.map": "/chubsy/static/css/main.8c981234.chunk.css.map",
+    "static/js/2.297dac6c.chunk.js.LICENSE.txt": "/chubsy/static/js/2.297dac6c.chunk.js.LICENSE.txt",
+    "static/media/home.less": "/chubsy/static/media/homepic.41c8874c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.020fea2b.js",
+    "static/js/2.297dac6c.chunk.js",
+    "static/css/main.8c981234.chunk.css",
+    "static/js/main.bdfc56a8.chunk.js"
+  ]
+}
