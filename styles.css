@@ -1,5 +1,6 @@
 .chubsy-wrapper {
   height: 100%;
+  position: relative;
 }
 .chubsy-wrapper .chubsy-wrapper-nav {
   position: absolute;
@@ -30,6 +31,7 @@
   text-decoration: none;
 }
 
+
 body,
 html,
 #root,
@@ -39,26 +41,66 @@ html,
   font-family: 'Baloo 2', cursive;
 }
 .home-wrapper {
-  background-image: url(dist41c8874c9953ecfc05ff2363114617ec.jpg);
+  background-image: url(/41c8874c9953ecfc05ff2363114617ec.jpg);
 }
 
-.about-wrapper {
-  padding-top: 90px;
+.about {
+  height: 100%;
 }
-
-.travel {
-  padding-top: 70px;
-  overflow: hidden;
+.about .about-me {
+  margin: 0;
+  position: absolute;
+  width: 165px;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
-.travel .travel-description {
-  padding-top: 70px;
-  text-align: center;
-  font-size: 20px;
+.about .about-cookie {
+  margin: 0;
+  position: absolute;
+  width: 165px;
+  top: 35%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
-.travel .travel-map {
-  overflow: hidden;
-  padding-top: 50px;
-  width: 100%;
-  height: 700px;
+.about .about-dog {
+  position: fixed;
+  width: 210px;
+  top: 35%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.about .about-line-right {
+  position: fixed;
+  width: 240px;
+  top: 45%;
+  left: 62%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1040px) {
+  .about .about-line-right {
+    width: 200px;
+  }
+}
+.about .about-line-left {
+  position: fixed;
+  width: 240px;
+  top: 35%;
+  left: 28.2%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: scaleX(-1);
+}
+@media only screen and (max-width: 1040px) {
+  .about .about-line-left {
+    width: 200px;
+  }
 }
 
