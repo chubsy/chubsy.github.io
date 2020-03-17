@@ -1,106 +1,17 @@
 .chubsy-wrapper {
   height: 100%;
-  position: relative;
 }
 .chubsy-wrapper .chubsy-wrapper-nav {
   position: absolute;
-  width: 100%;
-  background-color: rgba(220, 220, 220, 0.6);
-  font-size: 18px;
-  font-weight: 800;
 }
-.chubsy-wrapper .chubsy-wrapper-nav ul.chubsy-wrapper-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  float: right;
-  padding-right: 30px;
-}
-.chubsy-wrapper .chubsy-wrapper-nav ul.chubsy-wrapper-ul li.chubsy-wrapper-li {
-  display: inline-block;
-  padding: 30px 12px;
-}
-.chubsy-wrapper .chubsy-wrapper-nav ul.chubsy-wrapper-ul li.chubsy-wrapper-li:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.chubsy-wrapper .chubsy-wrapper-nav ul.chubsy-wrapper-ul li.chubsy-wrapper-li a {
-  color: black;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
 
 body,
 html,
 #root,
 .home-wrapper {
   height: 100%;
-  margin: 0;
-  font-family: 'Baloo 2', cursive;
 }
 .home-wrapper {
-  background-image: url(/41c8874c9953ecfc05ff2363114617ec.jpg);
-}
-
-.about {
-  height: 100%;
-}
-.about .about-me {
-  margin: 0;
-  position: absolute;
-  width: 165px;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-.about .about-cookie {
-  margin: 0;
-  position: absolute;
-  width: 165px;
-  top: 35%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-.about .about-dog {
-  position: fixed;
-  width: 210px;
-  top: 35%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-.about .about-line-right {
-  position: fixed;
-  width: 240px;
-  top: 45%;
-  left: 62%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 1040px) {
-  .about .about-line-right {
-    width: 200px;
-  }
-}
-.about .about-line-left {
-  position: fixed;
-  width: 240px;
-  top: 35%;
-  left: 28.2%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: scaleX(-1);
-}
-@media only screen and (max-width: 1040px) {
-  .about .about-line-left {
-    width: 200px;
-  }
+  background-image: url(public41c8874c9953ecfc05ff2363114617ec.jpg);
 }
 

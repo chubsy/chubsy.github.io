@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/chubsy/static/css/main.ec034b5a.chunk.css",
+    "main.js": "/chubsy/main.js",
+    "main.js.map": "/chubsy/static/js/main.0b308167.chunk.js.map",
+    "runtime-main.js": "/chubsy/static/js/runtime-main.b75c7e0d.js",
+    "runtime-main.js.map": "/chubsy/static/js/runtime-main.b75c7e0d.js.map",
+    "xlsx.js": "/chubsy/static/js/xlsx.0c7ff3cd.chunk.js",
+    "xlsx.js.map": "/chubsy/static/js/xlsx.0c7ff3cd.chunk.js.map",
+    "static/js/3.33cf1e6f.chunk.js": "/chubsy/static/js/3.33cf1e6f.chunk.js",
+    "static/js/3.33cf1e6f.chunk.js.map": "/chubsy/static/js/3.33cf1e6f.chunk.js.map",
+    "static/js/4.f187ab1f.chunk.js": "/chubsy/static/js/4.f187ab1f.chunk.js",
+    "static/js/4.f187ab1f.chunk.js.map": "/chubsy/static/js/4.f187ab1f.chunk.js.map",
+    "static/js/5.d366550c.chunk.js": "/chubsy/static/js/5.d366550c.chunk.js",
+    "static/js/5.d366550c.chunk.js.map": "/chubsy/static/js/5.d366550c.chunk.js.map",
+    "static/js/6.bdda7c49.chunk.js": "/chubsy/static/js/6.bdda7c49.chunk.js",
+    "static/js/6.bdda7c49.chunk.js.map": "/chubsy/static/js/6.bdda7c49.chunk.js.map",
+    "index.html": "/chubsy/index.html",
+    "precache-manifest.222d793fdca53115c1788ec211439d9c.js": "/chubsy/precache-manifest.222d793fdca53115c1788ec211439d9c.js",
+    "service-worker.js": "/chubsy/service-worker.js",
+    "static/css/main.ec034b5a.chunk.css.map": "/chubsy/static/css/main.ec034b5a.chunk.css.map",
+    "static/js/3.33cf1e6f.chunk.js.LICENSE.txt": "/chubsy/static/js/3.33cf1e6f.chunk.js.LICENSE.txt",
+    "static/js/4.f187ab1f.chunk.js.LICENSE.txt": "/chubsy/static/js/4.f187ab1f.chunk.js.LICENSE.txt",
+    "static/js/5.d366550c.chunk.js.LICENSE.txt": "/chubsy/static/js/5.d366550c.chunk.js.LICENSE.txt",
+    "static/media/cookie.svg": "/chubsy/static/media/cookie.9720dd0a.svg",
+    "static/media/dogmomma.svg": "/chubsy/static/media/dogmomma.edb41752.svg",
+    "static/media/home.less": "/chubsy/static/media/homepic.41c8874c.jpg",
+    "static/media/line.svg": "/chubsy/static/media/line.5e174e60.svg",
+    "static/media/me.svg": "/chubsy/static/media/me.52dea5ab.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b75c7e0d.js",
+    "static/js/3.33cf1e6f.chunk.js",
+    "static/css/main.ec034b5a.chunk.css",
+    "static/js/main.0b308167.chunk.js"
+  ]
+}
