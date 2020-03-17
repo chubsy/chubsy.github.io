@@ -3,11 +3,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 import './styles/chubsy.less';
 
 import Home from '../home/home';
+import About from '../about/about';
+import Travel from '../travel/travel';
 
 class Chubsy extends Component {
   constructor(props) {
@@ -16,20 +18,21 @@ class Chubsy extends Component {
 
     };
   }
+
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="chubsy-wrapper">
           <nav className="chubsy-wrapper-nav">
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
+            <ul className="chubsy-wrapper-ul">
+              <li className="chubsy-wrapper-li">
+                <Link to="/chubsy">Home</Link>
               </li>
-              <li>
+              <li className="chubsy-wrapper-li">
                 <Link to="/about">About</Link>
               </li>
-              <li>
-                <Link to="/users">Users</Link>
+              <li className="chubsy-wrapper-li">
+                <Link to="/travel">Travel</Link>
               </li>
             </ul>
           </nav>
@@ -37,10 +40,10 @@ class Chubsy extends Component {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/users">
-              <Users />
+            <Route path="/travel">
+              <Travel />
             </Route>
-            <Route path="/">
+            <Route path="/chubsy">
               <Home />
             </Route>
           </Switch>
@@ -48,14 +51,6 @@ class Chubsy extends Component {
       </Router>
     );
   }
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default Chubsy;

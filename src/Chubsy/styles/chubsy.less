@@ -2,5 +2,31 @@
   height: 100%;
   .chubsy-wrapper-nav {
     position: absolute;
+    width: 100%;
+    background-color: rgba(220, 220, 220, 0.6);
+    font-size: 18px;
+    font-weight: 800;
+    ul.chubsy-wrapper-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      float: right;
+      padding-right: 30px;
+      li.chubsy-wrapper-li {
+        display: inline-block;
+        padding: 30px 12px;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+        a {
+          color: black;
+          text-align: center;
+          padding: 16px;
+          text-decoration: none;
+
+        }
+      }
+    }
   }
 }
