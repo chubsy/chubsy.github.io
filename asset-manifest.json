@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/chubsy/static/css/main.8da4f975.chunk.css",
+    "main.css": "/chubsy/static/css/main.0e6493c5.chunk.css",
     "main.js": "/chubsy/main.js",
-    "main.js.map": "/chubsy/static/js/main.3cc2fa40.chunk.js.map",
+    "main.js.map": "/chubsy/static/js/main.2fc220eb.chunk.js.map",
     "runtime-main.js": "/chubsy/static/js/runtime-main.6525c01b.js",
     "runtime-main.js.map": "/chubsy/static/js/runtime-main.6525c01b.js.map",
     "xlsx.js": "/chubsy/static/js/xlsx.541b3fe5.chunk.js",
@@ -16,9 +16,9 @@
     "static/js/6.2ad1ee5a.chunk.js": "/chubsy/static/js/6.2ad1ee5a.chunk.js",
     "static/js/6.2ad1ee5a.chunk.js.map": "/chubsy/static/js/6.2ad1ee5a.chunk.js.map",
     "index.html": "/chubsy/index.html",
-    "precache-manifest.72db58457dd9c2084e915396e220fb53.js": "/chubsy/precache-manifest.72db58457dd9c2084e915396e220fb53.js",
+    "precache-manifest.d482a0ff194d8f96745fa3cba4d9bdcc.js": "/chubsy/precache-manifest.d482a0ff194d8f96745fa3cba4d9bdcc.js",
     "service-worker.js": "/chubsy/service-worker.js",
-    "static/css/main.8da4f975.chunk.css.map": "/chubsy/static/css/main.8da4f975.chunk.css.map",
+    "static/css/main.0e6493c5.chunk.css.map": "/chubsy/static/css/main.0e6493c5.chunk.css.map",
     "static/js/3.c37db202.chunk.js.LICENSE.txt": "/chubsy/static/js/3.c37db202.chunk.js.LICENSE.txt",
     "static/js/4.2bb51c14.chunk.js.LICENSE.txt": "/chubsy/static/js/4.2bb51c14.chunk.js.LICENSE.txt",
     "static/js/5.df0164a7.chunk.js.LICENSE.txt": "/chubsy/static/js/5.df0164a7.chunk.js.LICENSE.txt",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.6525c01b.js",
     "static/js/3.c37db202.chunk.js",
-    "static/css/main.8da4f975.chunk.css",
-    "static/js/main.3cc2fa40.chunk.js"
+    "static/css/main.0e6493c5.chunk.css",
+    "static/js/main.2fc220eb.chunk.js"
   ]
 }
