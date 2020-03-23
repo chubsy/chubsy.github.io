@@ -13,3 +13,32 @@
     height: 700px;
   }
 }
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+    .travel-modal {
+      border: 1px solid #f1f1f1;
+      text-align: center;
+      position:fixed;
+      top: 50%;
+      left: 50%;
+      width:50em;
+      height:30em;
+      margin-top: -15em;
+      margin-left: -25em;
+      background: rgba(255, 255, 255, 1);
+      overflow: scroll;
+      .travel-modal-img {
+        width: 100%;
+      }
+    }
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}

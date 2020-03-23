@@ -1,43 +1,133 @@
 .about {
-  padding-top: 90px;
+  padding-top: 140px;
+  text-align: center;
+  .about-header {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
   .about-me {
-    position: fixed;
+    margin: auto;
+    display: block;
     width: 200px;
-    top: 360px;
-    left: 720px;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
   }
-  .about-cookie {
-    position: fixed;
-    width: 165px;
-    top: 270px;
-    left: 311px;
-    transform: translate(-50%, -50%);
-  }
-  .about-dog {
-    position: fixed;
-    width: 210px;
-    top: 270px;
-    left: 1080px;
-    transform: translate(-50%, -50%);
-  }
-  .about-line-right {
-    position: fixed;
-    width: 240px;
-    top: 340px;
-    left: 890px;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-  }
-  .about-line-left {
-    position: fixed;
-    width: 240px;
-    top: 250px;
-    left: 390px;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: scaleX(-1);
+  .about-icons,
+  .about-title {
+    text-align: center;
+    .about-icon {
+      margin: auto;
+      display: inline-block;
+      width: 12%;
+      padding: 3px 2%;
+    }
+    .engineer {
+      width: 11.7%;
+      .engineer-top-screen {
+        fill:#d1d3d4;
+        stroke-width:7px;
+        stroke:#231f20;
+        stroke-miterlimit:10;
+      }
+      .engineer-top-text {
+        font-size:28.25px;
+        font-family:Avenir-Roman, Avenir;
+      }
+      .engineer-top-text {
+        fill:#231f20;
+      }
+      .engineer-bottom-keyboard {
+        fill:#808285;
+      }
+      &:hover {
+        .engineer-top-screen {
+          fill: #B29EB1;
+          transition: fill 1s ease-out;
+        }
+      }
+    }
+    .cookie {
+      width: 9%;
+      &:hover {
+        .cookie-base {
+          fill: #7AA98C;
+          transition: fill 1s ease-out;
+        }
+        .cookie-chocolate-chip {
+          fill: #EFF4F1;
+          transition: fill 1s ease-out;
+        }
+      }
+      .cookie-base {
+        fill: #f3d7b7;
+      }
+      .cookie-chocolate-chip {
+        fill: #9b8579;
+      }
+    }
+    .dog {
+      .dog-face {
+        fill:#f8f1e1;
+        stroke-miterlimit:10;
+      }
+      .dog-ear {
+        fill:#ad6c55;
+      }
+      &:hover {
+        .dog-ear {
+          fill: #EED8E2;
+          transition: fill 1s ease-out;
+        }
+        .dog-face {
+          fill: #F9F6ED;
+          transition: fill 1s ease-out;
+        }
+      }
+    }
+    .journal {
+      .journal-mountain-brown {
+        fill:#9b8579;
+      }
+      .journal-sky,
+      .journal-mountain-gray,
+      .journal-land,
+      .journal-sea {
+        stroke-miterlimit:10;
+      }
+      .journal-sky {
+        fill:#fff3df;
+      }
+      .journal-mountain-gray {
+        fill:#939598;
+      }
+      .journal-mountain-gray,
+      .journal-land,
+      .journal-sea {
+        stroke-width:0.5px;
+      }
+      .journal-land {
+        fill:#9b8579;
+      }
+      .journal-sea {
+        fill:#d1d3d4;
+      }
+      .journal-text {
+        font-size:6.62px;
+        font-family:Avenir-Roman, Avenir;
+      }
+      &:hover {
+        .journal-sea {
+          fill:#8DC4DA;
+          transition: fill 1s ease-out;
+        }
+        .journal-land,
+        .journal-mountain-gray {
+          fill:#6BA07F;
+          transition: fill 1s ease-out;
+        }
+        .journal-mountain-brown {
+          fill:#86C89F;
+          transition: fill 1s ease-out;
+        }
+      }
+    }
   }
 }

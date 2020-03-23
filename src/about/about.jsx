@@ -6,38 +6,33 @@ import {
   Link
 } from "react-router-dom";
 import './styles/about.less';
+import '../global/global.less';
 import meSvg from './img/me.svg';
-import dogSvg from './img/dogmomma.svg';
-import cookieSvg from './img/cookie.svg';
-import lineSvg from './img/line.svg';
+import EngineerIcon from './engineerIcon';
+import CookieIcon from './cookieIcon';
+import JournalIcon from './journalIcon';
+import DogIcon from './dogIcon';
 
 class About extends Component {
-  componentDidMount() {
-    // var path = document.querySelector('.about-line');
-    // var length = path.getTotalLength();
-    // // Clear any previous transition
-    // path.style.transition = path.style.WebkitTransition =
-    //   'none';
-    // // Set up the starting positions
-    // path.style.strokeDasharray = length + ' ' + length;
-    // path.style.strokeDashoffset = length;
-    // // Trigger a layout so styles are calculated & the browser
-    // // picks up the starting position before animating
-    // path.getBoundingClientRect();
-    // // Define our transition
-    // path.style.transition = path.style.WebkitTransition =
-    //   'stroke-dashoffset 2s ease-in-out';
-    // // Go!
-    // path.style.strokeDashoffset = '0';
-  }
   render() {
     return (
       <div className="about">
-        <img className="about-cookie" src={cookieSvg} />
-        <img className="about-me" src={meSvg} />
-        <img className="about-dog" src={dogSvg} />
-        <img className="about-line-right" src={lineSvg} />
-        <img className="about-line-left" src={lineSvg} />
+          <img className="about-me" src={meSvg} />
+          <div className="about-header">
+            hello! my name is chloe, and I am a
+          </div>
+          <div className="about-icons">
+            <EngineerIcon />
+            <CookieIcon />
+            <DogIcon />
+            <JournalIcon />
+          </div>
+          <div className="about-title">
+            <div className="about-icon">software engineer</div>
+            <div className="about-icon cookie">bakery owner</div>
+            <div className="about-icon">dog momma</div>
+            <div className="about-icon">bullet journaler</div>
+          </div>
       </div>
     );
   }

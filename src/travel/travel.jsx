@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Modal from 'react-modal';
+import TravelCountryEl from './src/travelCountryEl/travelCountryEl';
 
 import './styles/travel.less';
 import * as am4core from "@amcharts/amcharts4/core";
@@ -11,29 +13,13 @@ class Travel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,
+      showModal: false,
+      showCountry: "",
     };
 
     this.changeCountry = this.changeCountry.bind(this);
-  }
-
-  showModal = () => {
-    this.setState({ show: true });
-  }
-
-  hideModal = () => {
-    this.setState({ show: false });
-  }
-
-  changeCountry(polygonTemplate) {
-    polygonTemplate.events.on("hit", function(ev) {
-      const country = ev.target.dataItem.dataContext.id;
-      // if(worldData[country] != undefined) {
-      //   Object.keys()
-      // }
-      console.log(country);
-      console.log(worldData[country]);
-    });
+    this.createModal = this.createModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
 
   componentDidMount() {
@@ -52,27 +38,117 @@ class Travel extends Component {
     // Create map polygon series
     const polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
 
+    polygonSeries.data = [{
+      "id": "US",
+      "selected": true
+    }, {
+      "id": "JP",
+      "selected": true
+    }, {
+      "id": "CN",
+      "selected": true
+    }, {
+      "id": "ID",
+      "selected": true
+    }, {
+      "id": "FR",
+      "selected": true
+    }, {
+      "id": "TW",
+      "selected": true
+    }, {
+      "id": "IT",
+      "selected": true
+    }, {
+      "id": "ES",
+      "selected": true
+    }, {
+      "id": "GR",
+      "selected": true
+    }, {
+      "id": "GB",
+      "selected": true
+    }, {
+      "id": "CH",
+      "selected": true
+    }, {
+      "id": "NL",
+      "selected": true
+    }, {
+      "id": "TH",
+      "selected": true
+    }, {
+      "id": "MX",
+      "selected": true
+    }, {
+      "id": "KR",
+      "selected": true
+    }, {
+      "id": "CA",
+      "selected": true
+    }, {
+      "id": "DK",
+      "selected": true
+    }];
+
     // Make map load polygon (like country names) data from GeoJSON
     polygonSeries.useGeodata = true;
-    //
+
     // Configure series
     const polygonTemplate = polygonSeries.mapPolygons.template;
     polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.fill = am4core.color("#BDA0C3");
+    polygonTemplate.fill = am4core.color("#CCBBCE");
     this.changeCountry(polygonTemplate);
 
-    // Create hover state and set alternative fill color
-    const hs = polygonTemplate.states.create("hover");
-    hs.properties.fill = am4core.color("#A571B0");
+    polygonTemplate.adapter.add("fill", function(fill, target) {
+      if (target.dataItem.dataContext && target.dataItem.dataContext.selected) {
+        return am4core.color("#A571B0");
+      }
+      return fill;
+    });
   }
 
+  changeCountry(polygonTemplate) {
+    const self = this;
+    polygonTemplate.events.on("hit", function(ev) {
+      const country = ev.target.dataItem.dataContext.id;
+      if(worldData[country] != undefined) {
+        self.setState({
+          showModal : true,
+          showCountry: country,
+        });
+      }
+    });
+  }
+
+  createModal() {
+    return (
+      <Modal
+        className="travel-modal"
+        isOpen={this.state.showModal}
+        onRequestClose={this.hideModal}
+        contentLabel="Example Modal"
+      >
+        <TravelCountryEl
+          countryData={worldData[this.state.showCountry]}
+          currentCountry={this.state.showCountry}
+        />
+      </Modal>
+    );
+  }
+
+ hideModal() {
+   this.setState({ showModal: false });
+ }
+
   render() {
+    const countryModal = this.state.showModal ? this.createModal() : "";
     return (
       <div className="travel">
         <div className="travel-description">love the world around you!</div>
         <div className="travel-map"></div>
+        {countryModal}
       </div>
-
     );
   }
 }

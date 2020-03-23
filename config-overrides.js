@@ -10,8 +10,8 @@ function myOverrides(config, env) {
 
   config.plugins.push(
       (process.env.NODE_ENV === 'production') ?
-      new CopyWebpackPlugin([{from: 'public/main.js'}]) :
-      new CopyWebpackPlugin([{from: 'public/main.js', to: 'dist'}])
+      new CopyWebpackPlugin([{from: './main.js'}]) :
+      new CopyWebpackPlugin([{from: './main.js', to: 'dist'}])
   );
   return config
 }

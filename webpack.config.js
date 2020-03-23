@@ -3,11 +3,6 @@ const path = require( 'path' );
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ghpages = require('gh-pages');
-
-ghpages.publish('dist', function(err) {});
-
-const dist = path.join(__dirname, "dist");
 
 module.exports = {
   resolve: {
@@ -15,9 +10,9 @@ module.exports = {
   },
   entry: './src/index.jsx',
   output: {
-    path: dist,
+    path: __dirname,
     filename: '[name].js',
-    publicPath: 'dist',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -58,6 +53,12 @@ module.exports = {
       },
     ]
   },
+  devServer: {
+     historyApiFallback: true,
+     contentBase: '/',
+     index: '/',
+     hot: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
@@ -66,6 +67,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles.css',
     }),
-    new CopyWebpackPlugin([{from: './public/main.js'}])
+    new CopyWebpackPlugin([{from: './main.js'}])
   ]
 }
