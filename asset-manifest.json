@@ -2,13 +2,13 @@
   "files": {
     "main.css": "/chubsy/static/css/main.4dc0cd47.chunk.css",
     "main.js": "/chubsy/main.js",
-    "main.js.map": "/chubsy/static/js/main.ec4041b3.chunk.js.map",
+    "main.js.map": "/chubsy/static/js/main.3b0ceb61.chunk.js.map",
     "runtime-main.js": "/chubsy/static/js/runtime-main.b9040320.js",
     "runtime-main.js.map": "/chubsy/static/js/runtime-main.b9040320.js.map",
     "xlsx.js": "/chubsy/static/js/xlsx.221da160.chunk.js",
     "xlsx.js.map": "/chubsy/static/js/xlsx.221da160.chunk.js.map",
-    "static/js/3.22133f51.chunk.js": "/chubsy/static/js/3.22133f51.chunk.js",
-    "static/js/3.22133f51.chunk.js.map": "/chubsy/static/js/3.22133f51.chunk.js.map",
+    "static/js/3.b583ce66.chunk.js": "/chubsy/static/js/3.b583ce66.chunk.js",
+    "static/js/3.b583ce66.chunk.js.map": "/chubsy/static/js/3.b583ce66.chunk.js.map",
     "static/js/4.90e0981e.chunk.js": "/chubsy/static/js/4.90e0981e.chunk.js",
     "static/js/4.90e0981e.chunk.js.map": "/chubsy/static/js/4.90e0981e.chunk.js.map",
     "static/js/5.745759eb.chunk.js": "/chubsy/static/js/5.745759eb.chunk.js",
@@ -16,10 +16,10 @@
     "static/js/6.161f99ae.chunk.js": "/chubsy/static/js/6.161f99ae.chunk.js",
     "static/js/6.161f99ae.chunk.js.map": "/chubsy/static/js/6.161f99ae.chunk.js.map",
     "index.html": "/chubsy/index.html",
-    "precache-manifest.33d3d55745762ee201df1577b41b8821.js": "/chubsy/precache-manifest.33d3d55745762ee201df1577b41b8821.js",
+    "precache-manifest.952b8c3d1ed01204526d053ff8ff92eb.js": "/chubsy/precache-manifest.952b8c3d1ed01204526d053ff8ff92eb.js",
     "service-worker.js": "/chubsy/service-worker.js",
     "static/css/main.4dc0cd47.chunk.css.map": "/chubsy/static/css/main.4dc0cd47.chunk.css.map",
-    "static/js/3.22133f51.chunk.js.LICENSE.txt": "/chubsy/static/js/3.22133f51.chunk.js.LICENSE.txt",
+    "static/js/3.b583ce66.chunk.js.LICENSE.txt": "/chubsy/static/js/3.b583ce66.chunk.js.LICENSE.txt",
     "static/js/4.90e0981e.chunk.js.LICENSE.txt": "/chubsy/static/js/4.90e0981e.chunk.js.LICENSE.txt",
     "static/js/5.745759eb.chunk.js.LICENSE.txt": "/chubsy/static/js/5.745759eb.chunk.js.LICENSE.txt",
     "static/media/home.less": "/chubsy/static/media/homepic.41c8874c.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b9040320.js",
-    "static/js/3.22133f51.chunk.js",
+    "static/js/3.b583ce66.chunk.js",
     "static/css/main.4dc0cd47.chunk.css",
-    "static/js/main.ec4041b3.chunk.js"
+    "static/js/main.3b0ceb61.chunk.js"
   ]
 }
