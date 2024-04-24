@@ -12,7 +12,7 @@
     "babel-plugin-import": "^1.13.0",
     "babel-plugin-root-import": "^6.4.1",
     "create-react-app": "^3.4.0",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^5.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-modal": "^3.11.2",
